@@ -1,0 +1,12 @@
+name: xbots-sandbox
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - openjdk=21
+  - nodejs=20
+  - m2w64-toolchain
+  - pip:
+      - -r sandbox-requirements.txt

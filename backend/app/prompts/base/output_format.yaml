@@ -1,0 +1,20 @@
+# 通用输出格式
+name: "JSON输出格式"
+description: "要求AI返回JSON格式的输出，适用于需要结构化数据的场景。"
+content: |
+  请按照以下JSON格式返回结果：
+  ```json
+  {
+    "status": "success",
+    "data": {
+      // 具体数据内容
+    },
+    "message": "操作成功"
+  }
+  ```
+  
+  注意事项：
+  1. 确保返回的是标准JSON格式，没有多余的内容
+  2. 根据实际情况填充data字段
+  3. 状态字段可以是success或error
+  4. 错误时请在message字段中说明原因

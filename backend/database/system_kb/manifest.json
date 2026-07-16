@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-07-16T12:39:39.275680+00:00",
+  "owner_id_hex": "00000000000000000000000000000000",
+  "document_count": 6155,
+  "chunk_count": 27260,
+  "files": {
+    "knowledge_documents.jsonl.gz": "c177c8a3e708e0143d8a8c91fd180324ad78ea75b9ca333ed4c8ff852d330cfb",
+    "knowledge_chunks.jsonl.gz": "30aab76ca25b187cc101f887dc039bb622c763ec37c717aea6a1484807984ba9"
+  }
+}

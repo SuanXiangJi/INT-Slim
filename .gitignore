@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Backend runtime
+backend/sandbox/
+backend/backups/
+backend/logs/
+backend/_server.log
+backend/_server.err.log
+backend/uvicorn.log
+backend/*.log
+backend/*.pid
+backend/.sandbox-env-ready
+
+# Frontend build and dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/vite-log.txt
+frontend/vite-error.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Large local backups and downloaded frameworks
+_backups/
+frontend-openwebui/
+openwebui-base/
+CaiNiao/
+
+# Retired static frontend and one-off legacy importers
+frontend/api/
+frontend/css/
+frontend/js/
+frontend/public/api/
+check_kb.py
+import_cainiao.py
+import_kb.py
+
+# Local scratch and one-off scripts
+fix_*.py
+tmp_*.py
+_fix_*.py
+restored-index.html
+test_api.py
+test_api/
+tmp_doc_render/
+output/
+
+# Sensitive configuration and credentials
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+*.pem
+*.key
+*.p12
+
+# Database dumps are private by default. Only reviewed release assets belong here.
+*.sql
+*.sql.gz
+!backend/database/schema.sql
+!backend/database/system_kb/*.jsonl.gz
+!backend/database/system_kb/manifest.json
+
+# Test artifacts
+test/*.txt

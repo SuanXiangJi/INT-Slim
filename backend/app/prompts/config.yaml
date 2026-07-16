@@ -1,0 +1,35 @@
+﻿default_model:
+  name: deepseek-v4-flash
+  provider: deepseek
+  max_tokens: 8192
+  temperature: 0.6
+  top_p: 0.8
+available_models:
+- name: deepseek-chat
+  provider: deepseek
+  description: DeepSeek Chat (default)
+  max_tokens: 8192
+- name: deepseek-v4-pro
+  provider: deepseek
+  description: DeepSeek V4 Pro模型
+  max_tokens: 8192
+- name: deepseek-v4-flash
+  provider: deepseek
+  description: DeepSeek V4 Flash (default)
+  max_tokens: 8192
+- name: MiniMax-M3.0
+  provider: minimax
+  description: MiniMax M3.0模型
+  max_tokens: 8192
+- name: MiniMax-M2.7
+  provider: minimax
+  description: MiniMax M2.7模型
+  max_tokens: 8192
+template_version: '1.0'
+cache:
+  enabled: true
+  ttl: 3600
+  max_size: 1000
+logging:
+  enabled: true
+  level: INFO

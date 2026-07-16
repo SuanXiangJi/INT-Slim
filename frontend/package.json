@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "echarts": "^6.1.0",
+    "element-plus": "^2.8.4",
+    "highlight.js": "^11.11.1",
+    "katex": "^0.17.0",
+    "marked": "^17.0.1",
+    "perfect-scrollbar": "^1.5.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
+    "vue": "^3.5.24",
+    "vue-custom-scrollbar": "^1.4.4",
+    "vue-echarts": "^8.0.1",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.2.4"
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
