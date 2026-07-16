@@ -16,6 +16,7 @@ htmlcov/
 # IDE and OS
 .vscode/
 .idea/
+.trae/
 *.swp
 *.swo
 *~
