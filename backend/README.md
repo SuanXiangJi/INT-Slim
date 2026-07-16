@@ -1,54 +1,23 @@
-# FastAPI Backend for XBots Agent
+# 后端服务
 
-## Project Structure
+后端基于 FastAPI，包含认证、会话、Multi-Agents、RAG、学习流程、测验和代码评测模块。
 
-```
-backend/
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── config.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── user.py
-│   ├── schemas/
-│   │   ├── __init__.py
-│   │   └── user.py
-│   ├── crud/
-│   │   ├── __init__.py
-│   │   └── user.py
-│   ├── api/
-│   │   ├── __init__.py
-│   │   └── v1/
-│   │       ├── __init__.py
-│   │       └── auth.py
-│   ├── dependencies/
-│   │   ├── __init__.py
-│   │   └── auth.py
-│   └── utils/
-│       ├── __init__.py
-│       ├── password.py
-│       └── uuid.py
-├── .env
-├── requirements.txt
-└── README.md
-```
+## 安装与启动
 
-## Installation
-
-```bash
+```powershell
+python -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
 pip install -r requirements.txt
+Copy-Item .env.example .env
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2
 ```
 
-## Running the Server
+API 文档位于 `http://localhost:8000/api/v1/docs`。
 
-```bash
-uvicorn app.main:app --reload
+## 测试
+
+```powershell
+python -m pytest -q
 ```
 
-## API Endpoints
-
-### Auth
-- POST /api/v1/auth/register - Register a new user
-- POST /api/v1/auth/login - Login a user
-- GET /api/v1/auth/me - Get current user info
+数据库、公共知识库和代码沙箱配置请阅读根目录 [README](../README.md)。

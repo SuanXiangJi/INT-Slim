@@ -1,5 +1,18 @@
-# Vue 3 + Vite
+# 前端应用
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+前端使用 Vue 3、Vite、Element Plus 和 ECharts，包含 Agents 伴学、课程学习、测验、代码实训、错题本和学习分析页面。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 开发
+
+```powershell
+npm install
+npm run dev -- --host 0.0.0.0 --port 5173
+```
+
+## 构建
+
+```powershell
+npm run build
+```
+
+开发环境通过 Vite 将 `/api` 请求代理到 `http://localhost:8000`。

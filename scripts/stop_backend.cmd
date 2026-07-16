@@ -1,2 +1,2 @@
 @echo off
-powershell -NoProfile -ExecutionPolicy Bypass -File "D:\Desktop\XBots Agent\scripts\stop_backend.ps1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0stop_backend.ps1"

@@ -1,3 +1,4 @@
 @echo off
-start "XBots Backend" cmd /k "D:\Desktop\XBots Agent\scripts\start_backend.cmd"
-start "XBots Frontend" cmd /k "D:\Desktop\XBots Agent\scripts\start_frontend.cmd"
+set "SCRIPT_DIR=%~dp0"
+start "INT-Slim Backend" cmd /k call "%SCRIPT_DIR%start_backend.cmd"
+start "INT-Slim Frontend" cmd /k call "%SCRIPT_DIR%start_frontend.cmd"
